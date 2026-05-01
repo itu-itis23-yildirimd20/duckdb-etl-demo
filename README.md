@@ -25,21 +25,7 @@ DuckDB is an open-source, in-process analytical SQL engine designed for OLAP wor
 
 ## 3. Installation
 
-### Option A — Docker (Recommended)
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/itu-itis23-yildirimd20/duckdb-etl-demo.git
-cd duckdb-etl-demo
-
-# 2. Copy the example env file
-cp .env.example .env
-
-# 3. Build and run
-docker compose up --build
-```
-
-### Option B — pip (Local)
+### Option A — pip (Local)
 
 ```bash
 # 1. Clone the repository
@@ -57,6 +43,21 @@ python src/generate_data.py
 # 4. Run the demo
 python src/04_etl_pipeline.py
 ```
+### Option B — Docker 
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/itu-itis23-yildirimd20/duckdb-etl-demo.git
+cd duckdb-etl-demo
+
+# 2. Copy the example env file
+cp .env.example .env
+
+# 3. Build and run
+docker compose up --build
+```
+
+
 
 ---
 
